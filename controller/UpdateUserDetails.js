@@ -35,7 +35,7 @@ const updateUserDetails = async (req, res) => {
         }
 
         const newUserIsPresentOrNot = await userModel.find({ userName: newuserName });
-        if (newUserIsPresentOrNot.length == 1) {
+        if ([0, 1].includes(newUserIsPresentOrNot.length)) {
             const updatedUser = await userModel.findOneAndUpdate({ userName: newuserName }, fieldsToBeUpdated, { new: true })
             return res.render("user-details", { firstName : newfirstName, lastName : newlastName, email : newemail, userName : newuserName });
         }

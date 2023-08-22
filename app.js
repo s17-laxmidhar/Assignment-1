@@ -42,6 +42,11 @@ app.get('/user-details-update', (req, res) => {
     res.render('user-details-update', { userName, firstName, lastName, email }); 
 });
 
+app.get('/user-details', (req, res) => {
+    let { userName, firstName, lastName, email } = req.session;
+    res.render('user-details', { userName, firstName, lastName, email }); 
+});
+
 app.get('/logout', (req, res) => {
     req.session.destroy(() => {
         return res.render('home');
