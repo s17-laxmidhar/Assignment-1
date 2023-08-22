@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update User Details</title>
+    <link rel="stylesheet" href="/styles/user-details-update.css">
+</head>
+<body>
+    <div class="update-form">
+        <h2>Update User Details</h2>
+        <form action="/update-details" method="post" onsubmit="return handleSubmit()">
+            <div class="form-group">
+                <label for="newuserName">Username</label>
+                <input type="text" id="newuserName" name="newuserName" value="{{userName}}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="newfirstName">First Name</label>
+                <input type="text" id="newfirstName" name="newfirstName" value="{{firstName}}" required>
+            </div>
+            <div class="form-group">
+                <label for="newlastName">Last Name</label>
+                <input type="text" id="newlastName" name="newlastName" value="{{lastName}}" required>
+            </div>
+            <div class="form-group">
+                <label for="newemail">Email</label>
+                <input type="newemail" id="newemail" name="newemail" value="{{email}}" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="save-button">Save</button>
+                <a href="/user-details" class="cancel-button">Cancel</a>
+            </div>
+        </form>
+    </div>
+    <script>
+    function handleSubmit() {
+      // Get field values
+      var newfirstName = document.getElementById('newfirstName').value;
+      var newlastName = document.getElementById('newlastName').value;
+      var newemail = document.getElementById('newemail').value;
+      var newuserName = document.getElementById('newuserName').value;
+
+      console.log('First Name:', newfirstName);
+      console.log('Last Name:', newlastName);
+      console.log('Email:', newemail);
+      console.log('User Name:', newuserName);
+      
+    }
+  </script>
+</body>
+</html>

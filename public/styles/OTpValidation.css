@@ -1,0 +1,45 @@
+.otp-validation-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.otp-validation-form h1 {
+    margin-top: 0;
+}
+
+.otp-validation-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.otp-validation-form input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.otp-validation-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.otp-validation-form button:hover {
+    background-color: #0056b3;
+}

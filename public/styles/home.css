@@ -1,0 +1,41 @@
+.home-page {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px; 
+}
+
+.home-page h1 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.home-page p {
+    margin: 10px 0;
+}
+
+.home-page .links {
+    margin-top: 20px;
+}
+
+.home-page .login-link,
+.home-page .registration-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.home-page .login-link:hover,
+.home-page .registration-link:hover {
+    background-color: #0056b3;
+}

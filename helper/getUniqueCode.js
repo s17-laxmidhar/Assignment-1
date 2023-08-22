@@ -1,4 +1,4 @@
-function makeid(length) {
+function getUniqueCode(length) {
     let result = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const charactersLength = characters.length;
@@ -10,4 +10,4 @@ function makeid(length) {
     return result;
 };
 
-module.exports = makeid;
+module.exports = getUniqueCode;

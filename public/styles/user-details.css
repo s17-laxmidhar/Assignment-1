@@ -1,0 +1,78 @@
+.header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.user-details {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.user-details h2 {
+    color: #333;
+}
+
+.user-details p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.edit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #5dad6e;
+}
+
+.logout-link {
+    display: block;
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.logout-link:hover {
+    color: #c82333;
+}
+
+.user-details .edit-button {
+    margin-right: 10px;
+}
+
+.edit-link {
+    color: #04182c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.edit-link:hover {
+    color: #0056b3;
+}
+
+.logout-link {
+    display: block;
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.logout-link:hover {
+    color: #c82333;
+}
